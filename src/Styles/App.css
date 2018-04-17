@@ -1,0 +1,17 @@
+.d-inline-block{
+  display: inline-block!important;
+  vertical-align: top;
+}
+.main-menu{
+  height:           100%;
+  width: 			18%;
+  background-color: #013730;
+  color:            #FFFFFF;
+}
+.content{
+	width: 82%;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

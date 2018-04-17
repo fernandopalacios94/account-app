@@ -1,0 +1,15 @@
+.main-menu ul{
+  padding: 10px;
+  list-style: none;  
+}
+.main-menu .menu-element a{
+  color:           #FFFFFF;
+  display:         block;
+  padding:         15px 10px;
+  text-decoration: none;
+}
+.main-menu .menu-element a:hover{
+  background-color: #689D9F;
+  display:          block;
+  text-decoration:  none;
+}
