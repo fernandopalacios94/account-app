@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { render } from 'react-dom';
-import AccountsPayable from './Views/AccountsPayable/AccountsPayable';
 import { BrowserRouter, HashRouter, NavLink } from 'react-router-dom';
 import '../Styles/MainMenu.css';
 

@@ -10,7 +10,7 @@
     float: left;
 }
 .navbar li:first-child{
-	padding-left: 10px;
+	padding-left: 15px;
 }
 .navbar li a {
     display: block;    

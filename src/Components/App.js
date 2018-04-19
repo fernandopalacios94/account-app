@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../Styles/App.css';
+import '../Styles/MainMenu.css';
 
-import MainMenu from './MainMenu';
-import { render } from 'react-dom';
 import Home from './Views/Home';
 import AccountsPayable from './Views/AccountsPayable/AccountsPayable';
-import { BrowserRouter, HashRouter, NavLink, Route } from 'react-router-dom';
+import { HashRouter, NavLink, Route } from 'react-router-dom';
 
 class App extends Component {
 	render() {
@@ -27,6 +26,7 @@ class App extends Component {
 				<div className="content d-inline-block" id='Content'>
 					<Route exact path="/" component={Home}/>	
 					<Route path="/accounts-payable" component={AccountsPayable}/>
+
 				</div>
 			</div>
 		</HashRouter>
