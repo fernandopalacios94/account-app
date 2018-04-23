@@ -32,13 +32,19 @@ body {
 	margin-left: 40px;
 	margin-top:  8px;
 }
+.full-block{
+	width: 100%;
+	display: inline-block;
+}
 .half-block{
-	width: 50%;
+	vertical-align: top;
+	display:        inline-block;
+	width:          50%;
 }
 .form-group{
 	margin-top:    15px;
 	margin-bottom: 15px;
-	width:         100%;
+	width:         90%;
 }
 .form-group .form-item{
 	border-radius: 5px;

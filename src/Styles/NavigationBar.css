@@ -1,12 +1,15 @@
-.navbar ul{
+.breadcrumb{
 	list-style-type: none;
 	width: 100%;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #689D9F
+    background-color: #689D9F;
+    border-radius: 0px;
 }
-.navbar li {
+.breadcrumb-item a{
+    color: #FFFFFF!important;
+    text-decoration: none;
+}
+.navbar li {.
     float: left;
 }
 .navbar li:first-child{

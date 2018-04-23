@@ -4,12 +4,15 @@
 }
 .main-menu{
   height:           100%;
-  width: 			18%;
   background-color: #013730;
   color:            #FFFFFF;
 }
+.main-container{
+	background-color: #013730;	
+}
 .content{
 	width: 82%;
+	background-color: #FFFFFF;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
