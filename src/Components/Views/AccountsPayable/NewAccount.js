@@ -12,7 +12,7 @@ class NewAccount extends Component {
 				<h2>Nueva Cuenta</h2>
 			</div>
 			<div className="col-md-6 col-12">
-				<form action="">
+				<form onSubmit={saveAccount} id="Form_NewAccount" action="">
 					<div className="row">				
 						<div className="col-md-12 col-12">
 							<div className="form-group">
@@ -29,17 +29,17 @@ class NewAccount extends Component {
 						<div className="col-md-6 col-12">
 							<div className="form-group">
 								<label htmlFor="provider">Fecha:</label>
-								<input type="text" name="provider" className="form-control" />
+								<input type="text" name="date" className="form-control" />
 							</div>
 						</div>				
 						<div className="col-md-6 col-12">
 							<div className="form-group">
 								<label htmlFor="provider">Monto (con IVA):</label>
-								<input type="text" name="provider" className="form-control" />
+								<input type="text" name="amount" className="form-control" />
 							</div>
 						</div>
 						<div className="col-md-12">
-							<button onClick={saveAccount} className="btn btn-primary float-right"><b>GUARDAR</b></button>					
+							<button type="submit" className="btn btn-primary float-right"><b>GUARDAR</b></button>					
 						</div>
 					</div>
 				</form>					
@@ -51,6 +51,8 @@ class NewAccount extends Component {
 
 function saveAccount(e){
 	e.preventDefault();
+	var form = document.getElementById('Form_NewAccount');
+	var data = new FormData(form);
 }
 
 export default NewAccount;
