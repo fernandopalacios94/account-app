@@ -1,6 +1,9 @@
 .d-inline-block{
-  display: inline-block!important;
+  display:        inline-block!important;
   vertical-align: top;
+}
+.float-right{
+	float: right!important;
 }
 .main-menu{
   height:           100%;
@@ -11,9 +14,14 @@
 	background-color: #013730;	
 }
 .content{
-	width: 82%;
 	background-color: #FFFFFF;
+	width:            82%;
 }
+.btn-title{
+	margin-left: 46px;
+	margin-top:  20px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

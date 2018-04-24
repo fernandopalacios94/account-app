@@ -3,54 +3,8 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
-.button-alpha{
-	background-color: #23B5AF;
-	border-radius:    5px;
-	border:           none;
-	color:            #FFFFFF;
-	padding:          10px;
-	text-decoration:  none;
-}
+
 .d-inline-block{
 	display:        inline-block!important;
 	vertical-align: top;
-}
-.panel{
-	width: 100%;
-}
-.panel-title h1{
-	color:        #013730;
-	margin:       10px 0px;
-}
-.panel-title{
-	padding: 0px 15px;
-}
-.panel-body{
-	padding: 0px 15px;
-}
-.panel-title a.button{
-	margin-left: 40px;
-	margin-top:  8px;
-}
-.full-block{
-	width: 100%;
-	display: inline-block;
-}
-.half-block{
-	vertical-align: top;
-	display:        inline-block;
-	width:          50%;
-}
-.form-group{
-	margin-top:    15px;
-	margin-bottom: 15px;
-	width:         90%;
-}
-.form-group .form-item{
-	border-radius: 5px;
-	border:        1px solid #E8E8E8;
-	font-size:     16px;
-	margin-top:    5px;
-	padding:       10px 5px;
-	width:         100%;
 }

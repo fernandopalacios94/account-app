@@ -3,41 +3,54 @@ import '../../../Styles/App.css';
 //import NavigationBar from '../../NavigationBar';
 
 class NewAccount extends Component {
-render(){
-	var obj = {'text':'Nueva Cuenta','key':3,'url':'#'};
+	render(){
+		var obj = {'text':'Nueva Cuenta','key':3,'url':'#'};
 
-	return (
-	<div>
-		<h2>Nueva Cuenta</h2>
-		<div className="half-block">
-			<form action="">
-				<div className="form-group">
-					<label htmlFor="concept">Concepto:</label>
-					<input type="text" name="concept" className="form-item" />
-				</div>
-				<div className="form-group">
-					<label htmlFor="provider">Proveedor:</label>
-					<input type="text" name="provider" className="form-item" />
-				</div>
-				<div className="full-block">
-					<div className="half-block">
-						<div className="form-group">
-							<label htmlFor="provider">Fecha:</label>
-							<input type="text" name="provider" className="form-item" />
-						</div>										
+		return (
+		<div className="row">
+			<div className="col-sm-12">
+				<h2>Nueva Cuenta</h2>
+			</div>
+			<div className="col-md-6 col-12">
+				<form action="">
+					<div className="row">				
+						<div className="col-md-12 col-12">
+							<div className="form-group">
+								<label htmlFor="concept">Concepto:</label>
+								<input type="text" name="concept" className="form-control" />
+							</div>
+						</div>
+						<div className="col-md-12 col-12">
+							<div className="form-group">
+								<label htmlFor="provider">Proveedor:</label>
+								<input type="text" name="provider" className="form-control" />
+							</div>
+						</div>
+						<div className="col-md-6 col-12">
+							<div className="form-group">
+								<label htmlFor="provider">Fecha:</label>
+								<input type="text" name="provider" className="form-control" />
+							</div>
+						</div>				
+						<div className="col-md-6 col-12">
+							<div className="form-group">
+								<label htmlFor="provider">Monto (con IVA):</label>
+								<input type="text" name="provider" className="form-control" />
+							</div>
+						</div>
+						<div className="col-md-12">
+							<button onClick={saveAccount} className="btn btn-primary float-right"><b>GUARDAR</b></button>					
+						</div>
 					</div>
-					<div className="half-block">
-						<div className="form-group">
-							<label htmlFor="provider">Monto (con IVA):</label>
-							<input type="text" name="provider" className="form-item" />
-						</div>										
-					</div>	
-				</div>
 				</form>					
 			</div>
 		</div>
 		);
+	}
 }
+
+function saveAccount(e){
+	e.preventDefault();
 }
 
 export default NewAccount;
