@@ -4,6 +4,8 @@ import NavigationBar from '../../NavigationBar';
 import NewAccount from './NewAccount';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 
+var GLOBAL_URL = "../../../Controllers";
+
 class AccountsPayable extends Component {
 	render(){
 		return (
@@ -23,6 +25,13 @@ class AccountsPayable extends Component {
 			</div>
 		</BrowserRouter>
 		);
+	}
+	componentDidMount() {
+		fetch('http://localhost.aquablock/account-app/').then((response) => {
+			return response.json();
+		}).then((data) => {
+        	console.log(data.msg);
+      	});
 	}
 }
 

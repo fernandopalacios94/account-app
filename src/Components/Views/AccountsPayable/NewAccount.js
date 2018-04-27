@@ -51,8 +51,19 @@ class NewAccount extends Component {
 
 function saveAccount(e){
 	e.preventDefault();
-	var form = document.getElementById('Form_NewAccount');
-	var data = new FormData(form);
+	var form  = document.getElementById('Form_NewAccount');	
+	var fdata = new FormData(form);
+	var body  = JSON.stringify(fdata);
+	fetch('http://localhost.aquablock/account-app?pol=debt', {
+		method: 'post',
+		crossDomain: true,
+		headers: {'Content-Type':'application/json'},
+		body: body,
+	}).then((response) => {
+			return response.json();
+		}).then((data) => {
+        	console.log(data.msg);
+      	});
 }
 
 export default NewAccount;
