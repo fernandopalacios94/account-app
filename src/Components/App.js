@@ -5,6 +5,7 @@ import '../Styles/MainMenu.css';
 
 import Home from './Views/Home';
 import AccountsPayable from './Views/AccountsPayable/AccountsPayable';
+import Clients from './Views/Clients/Clients';
 import { BrowserRouter, NavLink, Route } from 'react-router-dom';
 
 class App extends Component {
@@ -18,7 +19,7 @@ class App extends Component {
 						<li className="menu-element"><NavLink to="/accounts-payable">CUENTAS POR PAGAR</NavLink></li>
 						<li className="menu-element"><a href="">CUENTAS POR COBRAR</a></li>
 						<li className="menu-element"><a href="">PROVEEDORES</a></li>
-						<li className="menu-element"><a href="">CLIENTES</a></li>
+						<li className="menu-element"><NavLink to="/clients">CLIENTES</NavLink></li>
 						<li className="menu-element"><a href="">USUARIOS</a></li>
 						<li className="menu-element"><a href="">CONFIGURACIÓN</a></li>
 					</ul>
@@ -26,6 +27,7 @@ class App extends Component {
 				<div className="col-md-10 col-12" id='Content'>
 					<Route exact path="/" component={Home}/>	
 					<Route path="/accounts-payable" component={AccountsPayable}/>
+					<Route path="/clients" component={Clients}/>
 				</div>
 			</div>
 		</BrowserRouter>
