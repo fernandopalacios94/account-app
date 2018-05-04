@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import '../../Styles/App.css';
 import NavigationBar from '../NavigationBar';
-
+import { Breadcrumb, Row, Col } from 'reactstrap';
 class Home extends Component {
 	render(){
 		return (
-		<div>
-			<div id="NavBar" className="navbar">
-				<NavigationBar links={[{'text':'Inicio','url':'/','key':0}]} />
-			</div>
-			<div id="MainContent">
-				<h1>INICIO</h1>
-			</div>
+		<div>		
+			<Row>
+				<NavigationBar links={[{'text':'Inicio','url':'/','key':0}]} />		
+				<Col sm="12" md="12">
+					<h1>INICIO</h1>
+				</Col>
+			</Row>
 		</div>
 		);
 	}
