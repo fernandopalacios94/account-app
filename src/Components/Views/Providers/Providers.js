@@ -16,7 +16,7 @@ class Providers extends Component {
 						<NavigationBar links={[{'text':'Inicio','url':'/','key':0},{'text':'Proveedores','url':'/providers','key':1}]} />
 					</nav>				
 					<div className="col-sm-12">
-						<h1 className="d-inline-block"><b>CUENTAS POR PAGAR</b></h1>					
+						<h1 className="d-inline-block"><b>PROVEEDORES</b></h1>					
 						<NavLink className="d-inline-block btn btn-info btn-title" to="/providers/new-provider"><b>AÑADIR</b></NavLink>
 						<hr className="my-sm-1" />
 					</div>

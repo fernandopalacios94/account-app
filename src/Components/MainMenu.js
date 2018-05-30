@@ -11,7 +11,7 @@ class MainMenu extends Component {
 					<li className="menu-element"><NavLink to="/">INICIO</NavLink></li>
 					<li className="menu-element"><NavLink to="/accounts-payable">CUENTAS POR PAGAR</NavLink></li>
 					<li className="menu-element"><a href="">CUENTAS POR COBRAR</a></li>
-					<li className="menu-element"><a href="">PROVEEDORES</a></li>
+					<li className="menu-element"><NavLink to="/providers">PROVEEDORES</NavLink></li>
 					<li className="menu-element"><a href="">CLIENTES</a></li>
 					<li className="menu-element"><a href="">USUARIOS</a></li>
 					<li className="menu-element"><a href="">CONFIGURACIÓN</a></li>

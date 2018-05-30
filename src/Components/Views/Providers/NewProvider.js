@@ -9,14 +9,14 @@ class NewProvider extends Component {
 		return (
 		<div className="row">
 			<div className="col-sm-12">
-				<h2>Nueva Cuenta</h2>
+				<h2>Nuevo Proveedor</h2>
 			</div>
 			<div className="col-md-6 col-12">
 				<form onSubmit={saveAccount} id="FormNewProvider" action="">
 					<div className="row">				
 						<div className="col-md-12 col-12">
 							<div className="form-group">
-								<label htmlFor="concept"Nombre:</label>
+								<label htmlFor="concept">Nombre:</label>
 								<input type="text" name="name" className="form-control" />
 							</div>
 						</div>
@@ -29,13 +29,13 @@ class NewProvider extends Component {
 						<div className="col-md-6 col-12">
 							<div className="form-group">
 								<label htmlFor="date">Dirección de Facturación:</label>
-								<input type="text" name="business_address" className="form-control" />
+								<input type="text" name="address" className="form-control" />
 							</div>
 						</div>				
 						<div className="col-md-6 col-12">
 							<div className="form-group">
 								<label htmlFor="total">Correo de Facturación:</label>
-								<input type="text" name="business_email" className="form-control" />
+								<input type="text" name="email" className="form-control" />
 							</div>
 						</div>
 						<div className="col-md-12">
@@ -64,7 +64,7 @@ function saveAccount(e){
 	}).then((response) => {
 			return response.json();
 		}).then((data) => {
-        	console.log(data.msg);
+        	console.log(data.message);
       	});
 }
 
