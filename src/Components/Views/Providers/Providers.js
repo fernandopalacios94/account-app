@@ -27,10 +27,9 @@ class Providers extends Component {
 		);
 	}
 	componentDidMount() {
-		fetch('http://localhost.server.com/accounts/').then((response) => {
-			return response.json();
+		fetch('http://localhost.server.com/accounts/providers/').then((response) => {
+			return response;
 		}).then((data) => {
-        	console.log(data.msg);
       	});
 	}
 }
