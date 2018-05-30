@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import '../../../Styles/App.css';
 //import NavigationBar from '../../NavigationBar';
 
-class NewAccount extends Component {
+class NewProvider extends Component {
 	render(){
 		var obj = {'text':'Nueva Cuenta','key':3,'url':'#'};
 
@@ -12,30 +12,30 @@ class NewAccount extends Component {
 				<h2>Nueva Cuenta</h2>
 			</div>
 			<div className="col-md-6 col-12">
-				<form onSubmit={saveAccount} id="FormNewAccount" action="">
+				<form onSubmit={saveAccount} id="FormNewProvider" action="">
 					<div className="row">				
 						<div className="col-md-12 col-12">
 							<div className="form-group">
-								<label htmlFor="concept">Concepto:</label>
-								<input type="text" name="concept" className="form-control" />
+								<label htmlFor="concept"Nombre:</label>
+								<input type="text" name="name" className="form-control" />
 							</div>
 						</div>
 						<div className="col-md-12 col-12">
 							<div className="form-group">
-								<label htmlFor="provider_id">Proveedor:</label>
-								<input type="text" name="provider_id" className="form-control" />
+								<label htmlFor="provider_id">RFC:</label>
+								<input type="text" name="rfc" className="form-control" />
 							</div>
 						</div>
 						<div className="col-md-6 col-12">
 							<div className="form-group">
-								<label htmlFor="date">Fecha:</label>
-								<input type="text" name="date" className="form-control" />
+								<label htmlFor="date">Dirección de Facturación:</label>
+								<input type="text" name="business_address" className="form-control" />
 							</div>
 						</div>				
 						<div className="col-md-6 col-12">
 							<div className="form-group">
-								<label htmlFor="total">Monto (con IVA):</label>
-								<input type="text" name="total" className="form-control" />
+								<label htmlFor="total">Correo de Facturación:</label>
+								<input type="text" name="business_email" className="form-control" />
 							</div>
 						</div>
 						<div className="col-md-12">
@@ -51,10 +51,10 @@ class NewAccount extends Component {
 
 function saveAccount(e){
 	e.preventDefault();
-	var form  = document.getElementById('FormNewAccount');
+	var form  = document.getElementById('FormNewProvider');
 	console.log(form);
 	var fdata = new FormData(form);
-	fetch('http://localhost.server.com/accounts/accounts-payable/', {
+	fetch('http://localhost.server.com/accounts/providers/', {
 		method: 'POST',
 		crossDomain: true,
 		headers: {
@@ -68,4 +68,4 @@ function saveAccount(e){
       	});
 }
 
-export default NewAccount;
+export default NewProvider;

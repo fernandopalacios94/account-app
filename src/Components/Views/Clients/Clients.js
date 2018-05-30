@@ -27,11 +27,16 @@ class Clients extends Component {
 		);
 	}
 	componentDidMount() {
-		fetch('http://localhost.aquablock/account-app/').then((response) => {
-			return response.json();
+		fetch('http://localhost.server.com/accounts',{
+			headers: new Headers({
+				'Access-Control-Allow-Origin': '*',
+				'Content-Type': 'application/json'
+		})
+		}).then((response) => {
+				return response.json();
 		}).then((data) => {
-        	console.log(data.msg);
-      	});
+	        console.log(data);
+	    });
 	}
 }
 
