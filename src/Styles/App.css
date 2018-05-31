@@ -7,11 +7,11 @@
 }
 .main-menu{
   height:           100%;
-  background-color: #013730;
+  background-color: #00211D;
   color:            #FFFFFF;
 }
 .main-container{
-	background-color: #013730;	
+	background-color: #00211D;	
 }
 .content{
 	background-color: #FFFFFF;
@@ -21,7 +21,14 @@
 	margin-left: 46px;
 	margin-top:  20px;
 }
-
+ol.breadcrumb{
+  background-color: #256C62;
+  border-radius:    0px!important;
+}
+div#SidebarTitle{
+  background-color: #0E5047;
+  padding:          7px;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

@@ -15,7 +15,10 @@ class App extends Component {
 		return (
 				<BrowserRouter>			
 					<Row>
-						<Col id="MenuBar" className="main-menu" md="2" sm="12" >				
+						<Col id="MenuBar" className="main-menu px-0" md="2" sm="12" >
+							<div id="SidebarTitle" className="text-center">
+								<h3 className="m-0">CUENTAS</h3>
+							</div>			
 							<ul id="MainMenuList">
 								<li className="menu-element"><NavLink to="/">INICIO</NavLink></li>
 								<li className="menu-element"><NavLink to="/accounts-payable">CUENTAS POR PAGAR</NavLink></li>
