@@ -12,9 +12,11 @@ class AccountsPayable extends Component {
 		<BrowserRouter>
 			<div>
 				<div className="row">
-					<nav aria-label="breadcrumb" id="NavBar">
-						<NavigationBar links={[{'text':'Inicio','url':'/','key':0},{'text':'Cuentas Por Pagar','url':'/accounts-payable','key':1}]} />
-					</nav>				
+					<div className="col-sm-12 px-0">
+						<nav aria-label="breadcrumb" id="NavBar">
+							<NavigationBar links={[{'text':'Inicio','url':'/','key':0},{'text':'Cuentas Por Pagar','url':'/accounts-payable','key':1}]} />
+						</nav>				
+					</div>
 					<div className="col-sm-12">
 						<h1 className="d-inline-block"><b>CUENTAS POR PAGAR</b></h1>					
 						<NavLink className="d-inline-block btn btn-info btn-title" to="/accounts-payable/new-account"><b>AÑADIR</b></NavLink>
